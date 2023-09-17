@@ -1,0 +1,136 @@
+/** Gravity Forms CSS for Legal Trunk **/
+.legal-trunk-core-gravity-country-field .select-wrapper .select .select-trigger .label,
+.legal-trunk-core-gravity-country-select-field {
+    display: none;
+}
+
+.legal-trunk-core-gravity-country-field .select-wrapper {
+    border: 1px solid rgba(83, 78, 110, 0.17);
+    position: relative;
+    padding: 0;
+    margin-top: 1rem;
+    user-select: none;
+    width: 100%;
+    max-width: 34.375rem;
+    max-height: 50px;
+    overflow-y: hidden;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.legal-trunk-core-gravity-country-field .select-wrapper.open {
+    overflow-y: scroll;
+    max-height: 18.75rem;
+}
+
+.legal-trunk-core-gravity-country-field .select-wrapper.open .select .select-trigger .custom-options .custom-option {
+    display: flex;
+}
+
+.legal-trunk-core-gravity-country-field .select-wrapper.open .select .select-trigger .custom-options {
+    pointer-events: all;
+}
+
+.legal-trunk-core-gravity-country-field .select-wrapper.open .select .select-trigger .custom-options .custom-option:hover {
+    font-weight: 500;
+}
+
+.legal-trunk-core-gravity-country-field .select-wrapper.open .select .select-trigger .arrow svg {
+    transform: rotate(180deg);
+}
+
+.legal-trunk-core-gravity-country-field .select-wrapper .select-trigger {
+    position: relative;
+}
+
+.legal-trunk-core-gravity-country-field .select-wrapper .select .select-trigger .custom-options {
+    position: relative;
+    display: block;
+    top: 100%;
+    left: 0;
+    right: 0;
+    border-top: 0;
+    padding: 0 0.75rem;
+    background: #fff;
+    transition: all 0.5s;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.legal-trunk-core-gravity-country-field .select-wrapper .select .select-trigger .custom-options .custom-option {
+    position: relative;
+    display: none;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0;
+    font-size: 17px;
+    font-weight: 300;
+    color: #534E6E;
+    line-height: 50px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+
+.legal-trunk-core-gravity-country-field .select-wrapper .select .select-trigger .custom-options .custom-option:first-of-type {
+    display: flex;
+}
+
+.legal-trunk-core-gravity-country-field .select-wrapper .select .select-trigger .custom-options .custom-option img {
+    margin-right: 1rem;
+}
+
+.legal-trunk-core-gravity-country-field .select-wrapper .select .select-trigger .custom-options .custom-option:hover {
+    cursor: pointer;
+}
+
+.legal-trunk-core-gravity-country-field .select-wrapper .select .select-trigger .arrow svg {
+    position: absolute;
+    top: 1.25rem;
+    right: 0.9375rem;
+    z-index: 99;
+    transition: all 0.5s;
+}
+
+.legal-trunk-core-gravity-country-field .select-wrapper .select .select-trigger .arrow::before {
+    left: -5px;
+}
+
+.legal-trunk-core-gravity-country-field .select-wrapper .select .select-trigger .arrow::after {
+    left: 5px;
+}
+
+
+/** Founders Field Styles **/
+.legal-trunk-core-gravity-founders-field {
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.legal-trunk-core-gravity-founders-field .legal-trunk-core-founders-grouped-custom-fields {
+    display: none;
+}
+
+.legal-trunk-core-gravity-founders-field .legal-trunk-core-founders-grouped-custom-fields.added {
+    display: block;
+}
+
+.legal-trunk-core-gravity-founders-field .legal-trunk-core-founders-grouped-custom-fields.added.default {
+    visibility: hidden;
+    height: 0;
+}
+
+.legal-trunk-core-gravity-founders-field .legal-trunk-core-founders-grouped-custom-fields a.remove {
+    text-align: right;
+    display: block;
+    font-size: 15px;
+    text-transform: lowercase;
+}
+
+.legal-trunk-core-gravity-founders-field .legal-trunk-core-founders-grouped-custom-fields .founders-field {
+    margin-bottom: 2.5rem;
+}
+
+.hide-this-field {
+    display: none !important;
+}

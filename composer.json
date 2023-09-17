@@ -1,0 +1,23 @@
+{
+    "name": "damilareshobowale/legal-trunk-core",
+    "description": "Core Integration for Building the Local Trunk Web App",
+    "type": "wordpress-plugin",
+    "autoload": {
+        "psr-4": {
+            "LegalTrunkCore\\": "src/"
+        },
+        "files": [
+            "src/Functions/utils.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "Damilare Shobowale",
+            "email": "oluwadamilareshobowale@gmail.com"
+        }
+    ],
+    "require": {
+        "tzsk/otp": "^7.0",
+        "twilio/sdk": "^7.7"
+    }
+}
